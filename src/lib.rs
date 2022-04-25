@@ -1,6 +1,7 @@
 use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
 use pyo3_decimal_macro::make_decimal;
+use gdb_breakpoint::breakpoint;
 
 make_decimal!();
 

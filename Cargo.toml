@@ -13,6 +13,7 @@ pyo3_decimal_macro = { path = "../pyo3_decimal_macro" }
 rust_decimal = "1.23.1"
 fxhash = "0.2.1"
 once_cell = "1.10.0"
+gdb_breakpoint = "0.1.6"
 
 
 [dependencies.pyo3]

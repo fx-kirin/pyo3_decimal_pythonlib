@@ -31,7 +31,18 @@ def teardown_function(function):
 
 
 def test_func():
-    Decimal(2, 3)
+    assert Decimal("12.3") == Decimal(123, 1)
+    Decimal(123.4)
+    Decimal(123, 3)
+    assert Decimal(2, 3) == Decimal(2, 3)
+    Decimal(2, 3) * Decimal(2, 4)
+    Decimal(2, 3) * 2
+    Decimal(2, 3) / Decimal(2, 4)
+    Decimal(2, 3) / 2
+    Decimal(2, 3) + Decimal(2, 4)
+    Decimal(2, 3) - Decimal(2, 4)
+    - Decimal(2, 3)
+    assert Decimal(2, 3) + 2 == Decimal(2002, 3)
     pass
 
 
