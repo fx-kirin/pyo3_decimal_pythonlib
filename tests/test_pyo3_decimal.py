@@ -36,14 +36,15 @@ def test_func():
     Decimal(123, 3)
     assert Decimal(2, 3) == Decimal(2, 3)
     Decimal(2, 3) * Decimal(2, 4)
-    Decimal(2, 3) * 2
     Decimal(2, 3) / Decimal(2, 4)
-    Decimal(2, 3) / 2
     Decimal(2, 3) + Decimal(2, 4)
     Decimal(2, 3) - Decimal(2, 4)
     - Decimal(2, 3)
-    assert Decimal(2, 3) + 2 == Decimal(2002, 3)
-    pass
+    assert Decimal(2, 3) + Decimal(2) == Decimal(2002, 3)
+    to_str = Decimal(203, 2)
+    print(f"{to_str:.2f}")
+    print(f"{to_str:.2i}")
+    print(f"{to_str}")
 
 
 if __name__ == "__main__":
